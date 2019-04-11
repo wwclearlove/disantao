@@ -25,8 +25,8 @@ public class Sputil {
     public static void  removeKey(String key){
         getPreferences().edit().remove(key).apply();
     }
-    public static String  getString(String key){
-       return getPreferences().getString(key,null);
+    public static String  getString(String key,String def){
+       return getPreferences().getString(key,def);
     }
     public static Boolean  getBoolean(String key,Boolean def){
         return getPreferences().getBoolean(key,def);
