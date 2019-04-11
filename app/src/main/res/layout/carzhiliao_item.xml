@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="#d6d6d6">
+
+    <LinearLayout
+        android:id="@+id/zhiliao_carcader"
+        android:background="@drawable/card_shape"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:textSize="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/zhiliao_chepai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="鲁A10003"/>
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/zhiliao_weizhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="为处理违章2次"/>
+        <TextView
+
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:id="@+id/zhiliao_fakuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="扣2分   罚款250元"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/zhiliao_jia"
+        android:layout_marginRight="60dp"
+        android:layout_gravity="center"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/minus"/>
+
+
+</LinearLayout>
