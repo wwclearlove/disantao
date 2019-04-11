@@ -1,8 +1,9 @@
 package cdictv.disantao.bean;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class CarWeiZhangBean {
+public class CarWeiZhangBean implements Serializable{
 
 
     /**
@@ -13,7 +14,7 @@ public class CarWeiZhangBean {
     public int code;
     public DataBean data;
 
-    public static class DataBean {
+    public static class DataBean implements Serializable{
         /**
          * chepai : 川a10001
          * weichuli : 2
@@ -28,7 +29,7 @@ public class CarWeiZhangBean {
         public String fankuan;
         public List<XiangqingBean> xiangqing;
 
-        public static class XiangqingBean {
+        public static class XiangqingBean implements Serializable{
             /**
              * time : 2017-08-25  17:55:00
              * state : 未处理

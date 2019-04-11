@@ -15,6 +15,7 @@ import java.util.List;
 import cdictv.disantao.R;
 import cdictv.disantao.adatper.WdzjAtatper;
 import cdictv.disantao.fragment.RemoteControlFragment;
+import cdictv.disantao.fragment.ChongzhijiluFragment;
 import cdictv.disantao.fragment.WdyeFragment;
 import cdictv.disantao.util.Sputil;
 
@@ -80,8 +81,7 @@ public class WodezjActivity extends AppCompatActivity {
     private void getdata() {
         mFragments.add(new WdyeFragment());
         mFragments.add(new RemoteControlFragment());
-
-
+        mFragments.add(new ChongzhijiluFragment());
 
         mAtatper.notifyDataSetChanged();
     }
@@ -91,7 +91,7 @@ public class WodezjActivity extends AppCompatActivity {
         wdye = (TextView) findViewById(R.id.wdye);
         yckz = (TextView) findViewById(R.id.yckz);
         cajl = (TextView) findViewById(R.id.cajl);
-        name.setText(Sputil.getString("name",""));
+        name.setText("当前用户"+Sputil.getString("name",""));
         mAtatper = new WdzjAtatper(getSupportFragmentManager(),mFragments,WodezjActivity.this);
         view.setAdapter(mAtatper);
     }

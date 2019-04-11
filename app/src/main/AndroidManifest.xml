@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -43,14 +44,26 @@
         <activity
             android:name=".activity.LKCXActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".activity.PersonalCenterActivity"
-            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.PersonalCenterActivity"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".activity.CarWeizahngActivity"
             android:screenOrientation="landscape" />
+
+
         <activity
+
             android:name=".activity.CarjieguoActivity"
-            android:screenOrientation="landscape"></activity>
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.HongLvDengActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".activity.NewsActivity">
+
+        </activity>
+
     </application>
 
 </manifest>

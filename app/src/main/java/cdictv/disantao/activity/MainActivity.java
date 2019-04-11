@@ -37,6 +37,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        if(Sputil.getBoolean("diyi",true)){
+            Sputil.putString("1号","100");
+            Sputil.putString("2号","100");
+            Sputil.putString("3号","100");
+            Sputil.putString("4号","80");
+        }else {
+            Sputil.putBoolean("diyi",false);
+        }
         initView();
     }
 
@@ -85,13 +93,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this,Loginactivity.class));
                 break;
             case R.id.cheliangweizhang:
-
+                startActivity(new Intent(MainActivity.this,CarWeizahngActivity.class));
                 break;
             case R.id.person:
                 startActivity(new Intent(this,PersonalCenterActivity.class));
                 break;
             case R.id.redlvdeng:
-
+                startActivity(new Intent(MainActivity.this,HongLvDengActivity.class));
                 break;
             case R.id.zhsz:
                 startActivity(new Intent(this,ZHSZActivity.class));
@@ -106,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 break;
             case R.id.yule:
-
+                startActivity(new Intent(MainActivity.this,NewsActivity.class));
                 break;
         }
     }
