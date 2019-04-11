@@ -53,8 +53,6 @@ public class WeiZhangAdapter extends BaseAdapter {
             convertView = LayoutInflater.from(context).inflate(R.layout.weizhang_item,parent,false);
         }
 
-
-
         weizhangTime = (TextView) convertView.findViewById(R.id.weizhang_time);
         weizhangJieguo = (TextView) convertView.findViewById(R.id.weizhang_jieguo);
         weizhangLu = (TextView) convertView.findViewById(R.id.weizhang_lu);
@@ -70,6 +68,6 @@ public class WeiZhangAdapter extends BaseAdapter {
 
 
 
-        return null;
+        return convertView;
     }
 }
