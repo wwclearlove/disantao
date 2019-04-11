@@ -6,13 +6,19 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import cdictv.disantao.R;
+import cdictv.disantao.util.Sputil;
 
 public class ZHSZActivity extends AppCompatActivity {
+    private ImageButton back;
     private TextView Default;
     private EditText et;
+
+
 
 
     @Override
@@ -25,6 +31,13 @@ public class ZHSZActivity extends AppCompatActivity {
     }
 
     private void init() {
+        back = (ImageButton) findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         Default = (TextView) findViewById(R.id.Default);
         et = (EditText) findViewById(R.id.et);
         et.addTextChangedListener(new TextWatcher() {
@@ -45,11 +58,22 @@ public class ZHSZActivity extends AppCompatActivity {
                 }
             }
         });
+
+        String yz = Sputil.getString("yz","50");
+        Default.setText("我的1-4号车账户余额告警阈值为"+yz+"元");
+
     }
 
     public void sz(View view) {
         String trim = et.getText().toString().trim();
-
+        if(!trim.isEmpty()){
+            Sputil.putString("yz",trim);
+            Default.setText("我的1-4号车账户余额告警阈值为"+trim+"元");
+            et.setText("");
+            Toast.makeText(this, "设置成功！！！", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(this, "不能为空！！！", Toast.LENGTH_SHORT).show();
+        }
 
     }
 }

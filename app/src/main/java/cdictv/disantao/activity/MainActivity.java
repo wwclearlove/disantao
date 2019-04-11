@@ -14,7 +14,8 @@ import android.widget.TextView;
 import cdictv.disantao.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
+//    TextPaint paint = textView.getPaint();
+//paint.setFakeBoldText(true);
     private ImageView left_menu;
     private TextView title;
     private TextView zhuxiao;
@@ -80,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 break;
             case R.id.person:
-
+                startActivity(new Intent(this,PersonalCenterActivity.class));
                 break;
             case R.id.redlvdeng:
 
@@ -89,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this,ZHSZActivity.class));
                 break;
             case R.id.lukuangchaxun:
-
+                startActivity(new Intent(this,LKCXActivity.class));
                 break;
             case R.id.wodezuojia:
 
