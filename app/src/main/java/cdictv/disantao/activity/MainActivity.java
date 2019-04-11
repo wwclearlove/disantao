@@ -13,7 +13,8 @@ import android.widget.TextView;
 import cdictv.disantao.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
+//    TextPaint paint = textView.getPaint();
+//paint.setFakeBoldText(true);
     private ImageView left_menu;
     private TextView title;
     private TextView zhuxiao;
