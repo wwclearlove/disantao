@@ -36,7 +36,7 @@ public class OkhttpiApi {
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-                final String s = response.body().toString().trim();
+                final String s = response.body().string().trim();
                 sHandler.post(new Runnable() {
                     @Override
                     public void run() {
