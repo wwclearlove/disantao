@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cdictv.disantao">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
 
     <application
@@ -29,21 +29,31 @@
         </activity>
         <activity
             android:name=".activity.RegisterActivity"
-            android:screenOrientation="landscape">
-        </activity>
+            android:screenOrientation="landscape"></activity>
         <activity
             android:name=".activity.WangjiActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.WodezjActivity"
             android:screenOrientation="landscape">
-        </activity>
-        <activity android:name=".activity.WodezjActivity">
-
 
         </activity>
-
+        <activity
+            android:name=".activity.ZHSZActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.LKCXActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.PersonalCenterActivity"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".activity.CarWeizahngActivity"
             android:screenOrientation="landscape" />
+
+
         <activity
+
             android:name=".activity.CarjieguoActivity"
             android:launchMode="singleTask"
             android:screenOrientation="landscape" />

@@ -96,16 +96,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this,CarWeizahngActivity.class));
                 break;
             case R.id.person:
-
+                startActivity(new Intent(this,PersonalCenterActivity.class));
                 break;
             case R.id.redlvdeng:
                 startActivity(new Intent(MainActivity.this,HongLvDengActivity.class));
                 break;
             case R.id.zhsz:
-
+                startActivity(new Intent(this,ZHSZActivity.class));
                 break;
             case R.id.lukuangchaxun:
-
+                startActivity(new Intent(this,LKCXActivity.class));
                 break;
             case R.id.wodezuojia:
                 startActivity(new Intent(this,WodezjActivity.class));
