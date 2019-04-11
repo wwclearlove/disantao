@@ -14,6 +14,7 @@ import java.util.List;
 
 import cdictv.disantao.R;
 import cdictv.disantao.adatper.WdzjAtatper;
+import cdictv.disantao.fragment.ChongzhijiluFragment;
 import cdictv.disantao.fragment.WdyeFragment;
 import cdictv.disantao.util.Sputil;
 
@@ -78,6 +79,7 @@ public class WodezjActivity extends AppCompatActivity {
 
     private void getdata() {
         mFragments.add(new WdyeFragment());
+        mFragments.add(new ChongzhijiluFragment());
 
         mAtatper.notifyDataSetChanged();
     }

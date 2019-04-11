@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,11 +28,12 @@ public class ChongzhijiluFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         context = container.getContext();
-        View view = View.inflate(context, R.layout.chongzhijilu_fragment, container);
+        View view = View.inflate(context, R.layout.chongzhijilu_fragment,null);
         ListView listView = view.findViewById(R.id.chongzhi_listview);
         try {
             Dao dao = DataBaseHelp.getDataBase(context).getDao(ChongzhiBean.class);
             List<ChongzhiBean> list = dao.queryForAll();
+            Log.d("da", "onCreateView: "+list.get(0).cnum);
             ChongzhiAdapter adapter = new ChongzhiAdapter(context,list);
             listView.setAdapter(adapter);
         } catch (SQLException e) {
@@ -39,6 +41,6 @@ public class ChongzhijiluFragment extends Fragment {
         }
 
 
-        return super.onCreateView(inflater, container, savedInstanceState);
+        return view;
     }
 }

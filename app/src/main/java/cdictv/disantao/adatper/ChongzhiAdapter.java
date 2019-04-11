@@ -55,7 +55,7 @@ public class ChongzhiAdapter extends BaseAdapter {
         chongzhiMoney = (TextView)  convertView.findViewById(R.id.chongzhi_money);
         chongzhiTime = (TextView)  convertView.findViewById(R.id.chongzhi_time);
 
-        chongzhiId.setText(list.get(position).cid);
+        chongzhiId.setText(position+1+"");
         chongzhiNum.setText(list.get(position).cnum);
         chongzhiMoney.setText(list.get(position).cmoney);
         chongzhiTime.setText(list.get(position).ctime);

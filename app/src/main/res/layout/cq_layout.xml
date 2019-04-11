@@ -36,6 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <EditText
+            android:inputType="number"
             android:hint="请输入要充值的金额"
             android:background="@drawable/edtext"
             android:id="@+id/et_user"
