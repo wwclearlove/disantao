@@ -87,7 +87,7 @@ public class WodezjActivity extends AppCompatActivity {
         wdye = (TextView) findViewById(R.id.wdye);
         yckz = (TextView) findViewById(R.id.yckz);
         cajl = (TextView) findViewById(R.id.cajl);
-        name.setText(Sputil.getString("name",""));
+        name.setText("当前用户"+Sputil.getString("name",""));
         mAtatper = new WdzjAtatper(getSupportFragmentManager(),mFragments,WodezjActivity.this);
         view.setAdapter(mAtatper);
     }
