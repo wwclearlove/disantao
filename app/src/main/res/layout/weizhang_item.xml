@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#f3f3f3"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:id="@+id/weizhang_time"
+            android:textSize="20dp"
+            android:layout_marginRight="300dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-04-02"/>
+        <TextView
+            android:id="@+id/weizhang_jieguo"
+            android:textSize="20dp"
+           android:layout_marginLeft="300dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未处理"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/weizhang_lu"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="65dp"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="学院路"
+        />
+
+
+    <TextView
+        android:id="@+id/weizhang_yuanying"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="111111111111111"/>
+
+
+
+    <TextView
+        android:id="@+id/weizhang_fakuan"
+        android:layout_marginLeft="65dp"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="扣分0分     罚款：100元"/>
+
+
+</LinearLayout>

@@ -30,13 +30,17 @@
     </option>
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+=======
+>>>>>>> ebb21b9a009a12102f13298c979e31fc775fcfd5
 =======
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="JDK" project-jdk-type="JavaSDK">
 =======
 <<<<<<< HEAD
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="JDK" project-jdk-type="JavaSDK">
 =======
+>>>>>>> 824b89371e63ee9158dd75f7ecd057026ff50ac5
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
 >>>>>>> 6bee648f7443bf41a38e73fc4b04ac52edd2d612
 >>>>>>> d16b5b46838b5be48c062bcf4641f5f4b89e7dd4

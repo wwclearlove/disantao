@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="300dp"
+                android:background="#29fb0d"
+                android:padding="30dp"
+                android:id="@+id/layout"
+              android:layout_height="150dp">
+    <TextView
+        android:id="@+id/tv_che"
+        android:text="1号小车"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/zhaungtai"
+        android:layout_below="@+id/tv_che"
+        android:text="正常"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="100"
+        android:background="@drawable/round_white"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textSize="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

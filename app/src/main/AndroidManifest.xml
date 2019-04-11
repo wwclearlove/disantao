@@ -22,12 +22,34 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".activity.Loginactivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".activity.WangjiActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.WodezjActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity
             android:name=".activity.ZHSZActivity"
             android:screenOrientation="landscape" />
         <activity
             android:name=".activity.LKCXActivity"
             android:screenOrientation="landscape" />
         <activity android:name=".activity.PersonalCenterActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.CarWeizahngActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.CarjieguoActivity"
             android:screenOrientation="landscape"></activity>
     </application>
 
