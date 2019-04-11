@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="cdictv.disantao">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -10,7 +12,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainActivity"
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".activity.Loginactivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".activity.WangjiActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity android:name=".activity.WodezjActivity"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

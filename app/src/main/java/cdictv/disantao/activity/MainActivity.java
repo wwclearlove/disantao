@@ -1,5 +1,6 @@
 package cdictv.disantao.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +12,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import cdictv.disantao.R;
+import cdictv.disantao.util.Sputil;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 //    TextPaint paint = textView.getPaint();
@@ -64,6 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         wodezuojia.setOnClickListener(this);
         wdjt.setOnClickListener(this);
         yule.setOnClickListener(this);
+        zhuxiao.setOnClickListener(this);
     }
 
     @Override
@@ -75,6 +78,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }else {
                     drawer_yout.openDrawer(Gravity.LEFT);
                 }
+                break;
+            case R.id.zhuxiao:
+                finish();
+                Sputil.putBoolean("fially", true);
+                startActivity(new Intent(this,Loginactivity.class));
                 break;
             case R.id.cheliangweizhang:
 

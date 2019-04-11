@@ -13,4 +13,27 @@ public class ShowOkhpttp {
                 .build();
         OkhttpiApi.request(request,myCall);
     }
+    public static  void login(String name, String password, MyCall myCall) {
+        RequestBody body = new FormBody.Builder()
+                .add("username",name)
+                .add("password", password)
+                .build();
+        Request request = new Request.Builder()
+                .url("https://www.easy-mock.com/mock/5c8f3515c42b1c0235654282/jiaotong/login")
+                .post(body)
+                .build();
+        OkhttpiApi.request(request,myCall);
+    }
+    public static  void regist(String name, String password, String emial,MyCall myCall) {
+        RequestBody body = new FormBody.Builder()
+                .add("username",name)
+                .add("password", password)
+                .add("email",emial)
+                .build();
+        Request request = new Request.Builder()
+                .url("https://www.easy-mock.com/mock/5c8f3515c42b1c0235654282/jiaotong/login")
+                .post(body)
+                .build();
+        OkhttpiApi.request(request,myCall);
+    }
 }
